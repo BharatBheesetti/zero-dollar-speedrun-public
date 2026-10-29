@@ -1,0 +1,58 @@
+{
+ "ckpt": "ckpt_0001451.pt",
+ "ckpt_bytes": 2978701435,
+ "ckpt_sha256": null,
+ "ckpt_load_s": 0.05,
+ "ckpt_step": 1450,
+ "ckpt_done": true,
+ "ckpt_tokens_seen": 760217600,
+ "ckpt_overflow_skips": 1,
+ "ckpt_args": {
+  "vocab_size": 50257,
+  "model_dim": 768,
+  "num_layers": 12,
+  "num_iters": 1450,
+  "batch_tokens": 524288,
+  "seq_len": 65536,
+  "block": 128,
+  "synthetic": false,
+  "seed": 0,
+  "scale_step_consts": "auto"
+ },
+ "sidecar": {
+  "step": 1450,
+  "next_step": 1451,
+  "tokens_seen": 760217600,
+  "reason": "final",
+  "bytes": 2978701435,
+  "created": "2026-10-29T14:30:25+0000"
+ },
+ "val_step": 1450,
+ "window_tokens": 1792,
+ "params": 275742772,
+ "passes": [
+  {
+   "amp": "fp32",
+   "val_loss": 3.269830916722833,
+   "seconds": 697.16,
+   "minus_logged": -5.841938732764618e-07
+  }
+ ],
+ "expect": 3.2698315009167063,
+ "val_file": "fineweb_val_000000.bin",
+ "val_file_bytes": 200001024,
+ "val_tokens": 10485760,
+ "val_tokens_sha256": "ce6ad9a79700ee93c1e3edd25ecdcb06e279a958b5a3841c1dd538ef8819e375",
+ "val_seq_len": 65536,
+ "val_sequences": 160,
+ "val_chunk": 65536,
+ "synthetic": false,
+ "val_file_sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640",
+ "val_set_is_upstream": true,
+ "trainer_sha256": "ff5412453d63f49f21ed4aaf18f4a07fe4db6b52037e1045aadeda25eca88312",
+ "rescore_sha256": "5c2de6b8769a15fda8cf3d84ddcf6adb1808b3f5b4695f049f8a2d73e259df51",
+ "world_size": 2,
+ "device": "Tesla T4",
+ "torch": "2.11.0+cu128",
+ "time": "2026-10-29T15:41:32+0000"
+}

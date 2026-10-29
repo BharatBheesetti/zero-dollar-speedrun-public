@@ -1,0 +1,110 @@
+{
+ "mode": "chain",
+ "kernel": "bharatbheesetti/zds-full-s2",
+ "resumed_from": {
+  "source": "bharatbheesetti/zds-full-s1",
+  "path": "/kaggle/input/notebooks/bharatbheesetti/zds-full-s1/run/ckpt/ckpt_0001110.pt",
+  "next_step": 1110,
+  "segments": [
+   {
+    "provider": "kaggle",
+    "start_step": 0,
+    "world_size": 2,
+    "device": "Tesla T4",
+    "started": "2026-10-28T23:04:58+0000",
+    "end_step": 1109,
+    "ended": "2026-10-29T10:45:02+0000",
+    "session_wall_s": 42015.4
+   }
+  ]
+ },
+ "trainer_exit": 0,
+ "watchdog_sigterm": false,
+ "elapsed_h": 3.696,
+ "n_gpu": 2,
+ "gpu": "Tesla T4",
+ "torch": "2.11.0+cu128",
+ "first_step": 1110,
+ "last_step": 1449,
+ "steps_this_session": 340,
+ "tokens_per_s_median": 14281.5,
+ "step_s_median": 36.63225,
+ "overflow_skips_total": 1,
+ "overflow_skips_this_session": 0,
+ "peak_gpu_mem_mib_nvidia_smi": {
+  "0": 14493,
+  "1": 14493
+ },
+ "last_train_loss": 3.2936261647107856,
+ "last_val": {
+  "event": "val",
+  "step": 1450,
+  "val_loss": 3.2698315009167063,
+  "tokens": 760217600,
+  "seconds": 245.52,
+  "val_file": "fineweb_val_000000.bin",
+  "val_tokens": 10485760,
+  "val_tokens_sha256": "ce6ad9a79700ee93c1e3edd25ecdcb06e279a958b5a3841c1dd538ef8819e375",
+  "val_seq_len": 65536,
+  "val_chunk": 65536,
+  "val_set_is_upstream": true,
+  "wall_total_s": 55235.09,
+  "gpu_seconds_total": 110470.19,
+  "compute_s": 52777.21,
+  "gpu_seconds": 105554.41,
+  "val_s": 1648.68,
+  "ckpt_s": 697.32,
+  "provider": "kaggle",
+  "time": 1793284225.293
+ },
+ "exit_reason": "done",
+ "done": true,
+ "newest_ckpt_next_step": 1451,
+ "gpu_seconds": 105554.41,
+ "gpu_seconds_total": 109979.12,
+ "val_set_is_upstream": true,
+ "val_vs_upstream": [
+  {
+   "step": 0,
+   "val_loss": 10.82583999633789,
+   "upstream_val_loss": 10.8258,
+   "val_minus_upstream": 0.0,
+   "schedule_same_as_upstream": true
+  },
+  {
+   "step": 250,
+   "val_loss": 3.9527174574080277,
+   "upstream_val_loss": 3.9427,
+   "val_minus_upstream": 0.01,
+   "schedule_same_as_upstream": false
+  },
+  {
+   "step": 500,
+   "val_loss": 3.6560953832466168,
+   "upstream_val_loss": 3.6528,
+   "val_minus_upstream": 0.0033,
+   "schedule_same_as_upstream": false
+  },
+  {
+   "step": 750,
+   "val_loss": 3.524461116967096,
+   "upstream_val_loss": 3.5205,
+   "val_minus_upstream": 0.004,
+   "schedule_same_as_upstream": false
+  },
+  {
+   "step": 1000,
+   "val_loss": 3.4159638163542483,
+   "upstream_val_loss": 3.4056,
+   "val_minus_upstream": 0.0104,
+   "schedule_same_as_upstream": false
+  },
+  {
+   "step": 1250,
+   "val_loss": 3.3174810943335116,
+   "upstream_val_loss": 3.3076,
+   "val_minus_upstream": 0.0099,
+   "schedule_same_as_upstream": false
+  }
+ ]
+}

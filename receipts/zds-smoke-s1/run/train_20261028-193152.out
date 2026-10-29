@@ -1,0 +1,17 @@
+val set: fineweb_val_000000.bin 200,001,024 bytes sha256 5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640 | 10,485,760 tokens sha256 ce6ad9a79700ee93... | upstream's val set: YES
+step 0/1390 val_loss 10.8258
+step 0/1390 loss 10.8258 16981 tok/s
+step 25/1390 loss 5.6792 15771 tok/s
+/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+step 50/1390 loss 5.1005 15753 tok/s
+step 75/1390 loss 4.8751 15755 tok/s
+step 100/1390 loss 4.6475 15830 tok/s
+step 125/1390 val_loss 4.3667
+step 125/1390 loss 4.3628 15741 tok/s
+step 150/1390 loss 4.2578 15722 tok/s
+step 175/1390 loss 4.1569 15645 tok/s
+step 200/1390 loss 4.0985 15729 tok/s
+step 225/1390 loss 3.9852 15375 tok/s
+step 250/1390 val_loss 3.9502
+step 250/1390 loss 4.0012 15442 tok/s

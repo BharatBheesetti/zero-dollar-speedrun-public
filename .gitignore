@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+data/
+ckpt/
+out/
+build/
+*.bin
+*.pt
+.pytest_cache/

@@ -1,0 +1,53 @@
+val set: fineweb_val_000000.bin 200,001,024 bytes sha256 5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640 | 10,485,760 tokens sha256 ce6ad9a79700ee93... | upstream's val set: YES
+step 0/1450 val_loss 10.8258
+step 0/1450 loss 10.8258 16871 tok/s
+step 25/1450 loss 5.6792 15141 tok/s
+/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+step 50/1450 loss 5.1004 15175 tok/s
+step 75/1450 loss 4.8738 15153 tok/s
+step 100/1450 loss 4.6524 15365 tok/s
+step 125/1450 loss 4.3641 15229 tok/s
+step 150/1450 loss 4.2552 15170 tok/s
+step 175/1450 loss 4.1549 15260 tok/s
+step 200/1450 loss 4.1044 15255 tok/s
+step 225/1450 loss 3.9954 14861 tok/s
+step 250/1450 val_loss 3.9527
+step 250/1450 loss 4.0031 14768 tok/s
+step 275/1450 loss 4.0009 14805 tok/s
+step 300/1450 loss 3.9385 14831 tok/s
+step 325/1450 loss 3.8535 14645 tok/s
+step 350/1450 loss 3.7506 14623 tok/s
+step 375/1450 loss 3.9061 14603 tok/s
+step 400/1450 loss 3.7508 14636 tok/s
+step 425/1450 loss 3.7034 14620 tok/s
+step 450/1450 loss 3.8503 14479 tok/s
+step 475/1450 loss 3.7229 14592 tok/s
+step 500/1450 val_loss 3.6561
+step 500/1450 loss 3.7373 14603 tok/s
+step 525/1450 loss 3.7211 14593 tok/s
+step 550/1450 loss 3.6064 14361 tok/s
+step 575/1450 loss 3.6274 14309 tok/s
+step 600/1450 loss 3.6181 14380 tok/s
+step 625/1450 loss 3.6358 14399 tok/s
+step 650/1450 loss 3.5398 14216 tok/s
+step 675/1450 loss 3.5641 14028 tok/s
+step 700/1450 loss 3.5408 14143 tok/s
+step 725/1450 loss 3.5610 14194 tok/s
+step 750/1450 val_loss 3.5245
+step 750/1450 loss 3.5136 14099 tok/s
+step 775/1450 loss 3.4898 13942 tok/s
+step 800/1450 loss 3.6836 13906 tok/s
+step 825/1450 loss 3.4821 13951 tok/s
+step 850/1450 loss 3.5231 13890 tok/s
+step 875/1450 loss 3.5503 13751 tok/s
+step 900/1450 loss 3.4898 13863 tok/s
+step 925/1450 loss 3.5204 13654 tok/s
+step 950/1450 loss 3.4583 13866 tok/s
+step 975/1450 loss 3.4693 13619 tok/s
+step 1000/1450 val_loss 3.4160
+step 1000/1450 loss 3.4136 13586 tok/s
+step 1025/1450 loss 3.4458 13631 tok/s
+step 1050/1450 loss 3.4352 13690 tok/s
+step 1075/1450 loss 3.4861 13486 tok/s
+step 1100/1450 loss 3.4236 13478 tok/s

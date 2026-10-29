@@ -1,0 +1,36 @@
+{
+ "source": "Hugging Face dataset kjj0/fineweb10B-gpt2, file fineweb_val_000000.bin (the file upstream's data/cached_fineweb10B.py downloads)",
+ "file_bytes": 200001024,
+ "file_sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640",
+ "scored_tokens": 10485760,
+ "read_tokens": "[0, 10,485,761) (inputs plus the shifted target)",
+ "slice_sha256_uint16_le": "ce6ad9a79700ee93c1e3edd25ecdcb06e279a958b5a3841c1dd538ef8819e375",
+ "sequences": "160 independent sequences of 65,536 tokens; mean token cross-entropy (upstream: 20 steps x 8 ranks x 65,536)",
+ "pinned_in": "trainer/train_t4.py VAL_FILE_SHA256, VAL_SLICE_SHA256",
+ "logged_by_each_run": {
+  "zds-smoke-s1": {
+   "val_file": "fineweb_val_000000.bin",
+   "val_file_bytes": 200001024,
+   "val_file_sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640",
+   "val_tokens": 10485760,
+   "val_tokens_sha256": "ce6ad9a79700ee93c1e3edd25ecdcb06e279a958b5a3841c1dd538ef8819e375",
+   "val_set_is_upstream": true
+  },
+  "zds-full-s1": {
+   "val_file": "fineweb_val_000000.bin",
+   "val_file_bytes": 200001024,
+   "val_file_sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640",
+   "val_tokens": 10485760,
+   "val_tokens_sha256": "ce6ad9a79700ee93c1e3edd25ecdcb06e279a958b5a3841c1dd538ef8819e375",
+   "val_set_is_upstream": true
+  },
+  "zds-full-s2": {
+   "val_file": "fineweb_val_000000.bin",
+   "val_file_bytes": 200001024,
+   "val_file_sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640",
+   "val_tokens": 10485760,
+   "val_tokens_sha256": "ce6ad9a79700ee93c1e3edd25ecdcb06e279a958b5a3841c1dd538ef8819e375",
+   "val_set_is_upstream": true
+  }
+ }
+}

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="677.9675pt" height="339.398004pt" viewBox="0 0 677.9675 339.398004" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-29T20:52:43.414084</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 339.398004 
+L 677.9675 339.398004 
+L 677.9675 0 
+L 0 0 
+z
+" style="fill: #fcfcfb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 168.5675 300.416383 
+L 670.7675 300.416383 
+L 670.7675 45.392383 
+L 168.5675 45.392383 
+z
+" style="fill: #fcfcfb"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 168.5675 300.416383 
+L 168.5675 45.392383 
+" clip-path="url(#p3b66488fa0)" style="fill: none; stroke: #e1e0d9; stroke-linecap: round"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m23cb3ddbdb" d="M 0 0 
+L 0 3.5 
+" style="stroke: #898781; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m23cb3ddbdb" x="168.5675" y="300.416383" style="fill: #898781; stroke: #898781; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: middle; fill: #52514e" x="168.5675" y="315.55982" transform="rotate(-0 168.5675 315.55982)">$0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 255.90663 300.416383 
+L 255.90663 45.392383 
+" clip-path="url(#p3b66488fa0)" style="fill: none; stroke: #e1e0d9; stroke-linecap: round"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m23cb3ddbdb" x="255.90663" y="300.416383" style="fill: #898781; stroke: #898781; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: middle; fill: #52514e" x="255.90663" y="315.55982" transform="rotate(-0 255.90663 315.55982)">$20</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 343.245761 300.416383 
+L 343.245761 45.392383 
+" clip-path="url(#p3b66488fa0)" style="fill: none; stroke: #e1e0d9; stroke-linecap: round"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m23cb3ddbdb" x="343.245761" y="300.416383" style="fill: #898781; stroke: #898781; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: middle; fill: #52514e" x="343.245761" y="315.55982" transform="rotate(-0 343.245761 315.55982)">$40</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 430.584891 300.416383 
+L 430.584891 45.392383 
+" clip-path="url(#p3b66488fa0)" style="fill: none; stroke: #e1e0d9; stroke-linecap: round"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m23cb3ddbdb" x="430.584891" y="300.416383" style="fill: #898781; stroke: #898781; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: middle; fill: #52514e" x="430.584891" y="315.55982" transform="rotate(-0 430.584891 315.55982)">$60</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 517.924022 300.416383 
+L 517.924022 45.392383 
+" clip-path="url(#p3b66488fa0)" style="fill: none; stroke: #e1e0d9; stroke-linecap: round"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m23cb3ddbdb" x="517.924022" y="300.416383" style="fill: #898781; stroke: #898781; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: middle; fill: #52514e" x="517.924022" y="315.55982" transform="rotate(-0 517.924022 315.55982)">$80</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 605.263152 300.416383 
+L 605.263152 45.392383 
+" clip-path="url(#p3b66488fa0)" style="fill: none; stroke: #e1e0d9; stroke-linecap: round"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m23cb3ddbdb" x="605.263152" y="300.416383" style="fill: #898781; stroke: #898781; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: middle; fill: #52514e" x="605.263152" y="315.55982" transform="rotate(-0 605.263152 315.55982)">$100</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 11px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: middle; fill: #52514e" x="419.6675" y="329.883062" transform="rotate(-0 419.6675 329.883062)">what the run cost to rent (USD)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_13"/>
+     <g id="text_8">
+      <text style="font-size: 10.5px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: end; fill: #0b0b0b" x="165.0675" y="74.716926" transform="rotate(-0 165.0675 74.716926)">nanochat speedrun (2025)</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_14"/>
+     <g id="text_9">
+      <text style="font-size: 10.5px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: end; fill: #0b0b0b" x="165.0675" y="138.472926" transform="rotate(-0 165.0675 138.472926)">llm.c GPT-2 (124M) (2024)</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_15"/>
+     <g id="text_10">
+      <text style="font-size: 10.5px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: end; fill: #0b0b0b" x="165.0675" y="202.228926" transform="rotate(-0 165.0675 202.228926)">Record #18 on rented 8×H100</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_16"/>
+     <g id="text_11">
+      <text style="font-size: 10.5px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: end; fill: #0b0b0b" x="165.0675" y="265.984926" transform="rotate(-0 165.0675 265.984926)">This run, Kaggle free 2×T4 (2026)</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 168.5675 81.733303 
+L 605.263152 81.733303 
+L 605.263152 60.056263 
+L 168.5675 60.056263 
+z
+" clip-path="url(#p3b66488fa0)" style="fill: #c3c2b7"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 168.5675 145.489303 
+L 255.90663 145.489303 
+L 255.90663 123.812263 
+L 168.5675 123.812263 
+z
+" clip-path="url(#p3b66488fa0)" style="fill: #c3c2b7"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 168.5675 209.245303 
+L 174.516605 209.245303 
+L 174.516605 187.568263 
+L 168.5675 187.568263 
+z
+" clip-path="url(#p3b66488fa0)" style="fill: #c3c2b7"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 168.5675 273.001303 
+L 168.5675 273.001303 
+L 168.5675 251.324263 
+L 168.5675 251.324263 
+z
+" clip-path="url(#p3b66488fa0)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 168.5675 300.416383 
+L 670.7675 300.416383 
+" style="fill: none; stroke: #c3c2b7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: start; fill: #0b0b0b" x="613.263152" y="73.819343" transform="rotate(-0 613.263152 73.819343)">$100</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9.5px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: start; fill: #52514e" x="169.877587" y="96.363793" transform="rotate(-0 169.877587 96.363793)">8×H100 rented, 3h51m; a ~560M chat model, a different job ($92.4 actual)</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: start; fill: #0b0b0b" x="263.90663" y="137.575343" transform="rotate(-0 263.90663 137.575343)">$20</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9.5px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: start; fill: #52514e" x="169.877587" y="160.061439" transform="rotate(-0 169.877587 160.061439)">8×A100 rented, ~90 min; 10B tokens; its val loss set the speedrun's target</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: start; fill: #0b0b0b" x="182.516605" y="201.331343" transform="rotate(-0 182.516605 201.331343)">≈$1.4</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 9.5px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: start; fill: #52514e" x="169.877587" y="223.875793" transform="rotate(-0 169.877587 223.875793)">derived: 3.4 min × $24/hr; train loop only</text>
+   </g>
+   <g id="line2d_17">
+    <defs>
+     <path id="m7260051e7f" d="M 0 4.5 
+C 1.193414 4.5 2.338109 4.025852 3.181981 3.181981 
+C 4.025852 2.338109 4.5 1.193414 4.5 0 
+C 4.5 -1.193414 4.025852 -2.338109 3.181981 -3.181981 
+C 2.338109 -4.025852 1.193414 -4.5 0 -4.5 
+C -1.193414 -4.5 -2.338109 -4.025852 -3.181981 -3.181981 
+C -4.025852 -2.338109 -4.5 -1.193414 -4.5 0 
+C -4.5 1.193414 -4.025852 2.338109 -3.181981 3.181981 
+C -2.338109 4.025852 -1.193414 4.5 0 4.5 
+z
+" style="stroke: #fcfcfb; stroke-width: 2"/>
+    </defs>
+    <g>
+     <use xlink:href="#m7260051e7f" x="168.5675" y="262.162783" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: start; fill: #0b0b0b" x="176.5675" y="265.087343" transform="rotate(-0 176.5675 265.087343)">$0</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9.5px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: start; fill: #52514e" x="169.877587" y="287.573439" transform="rotate(-0 169.877587 287.573439)">30.8 free T4-hours, no card on file</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: start; fill: #52514e" x="168.5675" y="34.362051" transform="rotate(-0 168.5675 34.362051)">Quoted prices from the authors' own posts (charts/SOURCES.md). Different jobs; not like-for-like.</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Liberation Sans', 'DejaVu Sans', 'Arial', 'Helvetica', sans-serif; text-anchor: start; fill: #0b0b0b" x="168.5675" y="17.392383" transform="rotate(-0 168.5675 17.392383)">What a GPT-2-class training run costs</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3b66488fa0">
+   <rect x="168.5675" y="45.392383" width="502.2" height="255.024"/>
+  </clipPath>
+ </defs>
+</svg>

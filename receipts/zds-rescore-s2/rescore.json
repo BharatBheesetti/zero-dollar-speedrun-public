@@ -1,0 +1,292 @@
+{
+ "kernel": "bharatbheesetti/zds-rescore-s2",
+ "sources": [
+  "bharatbheesetti/zds-full-s2",
+  "bharatbheesetti/zds-full-s1"
+ ],
+ "ckpt": "zds-full-s2/run/ckpt/ckpt_0001451.pt",
+ "expect": 3.2698315009167063,
+ "code_git_sha": "38fff7a",
+ "fp16": {
+  "exit": 0,
+  "result": {
+   "ckpt": "ckpt_0001451.pt",
+   "ckpt_bytes": 2978701435,
+   "ckpt_sha256": "5bc6bac31efbb414f6a647959704758244af4770b03d9f1d19301a022cd0c4ae",
+   "ckpt_load_s": 19.25,
+   "ckpt_step": 1450,
+   "ckpt_done": true,
+   "ckpt_tokens_seen": 760217600,
+   "ckpt_overflow_skips": 1,
+   "ckpt_args": {
+    "vocab_size": 50257,
+    "model_dim": 768,
+    "num_layers": 12,
+    "num_iters": 1450,
+    "batch_tokens": 524288,
+    "seq_len": 65536,
+    "block": 128,
+    "synthetic": false,
+    "seed": 0,
+    "scale_step_consts": "auto"
+   },
+   "sidecar": {
+    "step": 1450,
+    "next_step": 1451,
+    "tokens_seen": 760217600,
+    "reason": "final",
+    "bytes": 2978701435,
+    "created": "2026-10-29T14:30:25+0000"
+   },
+   "val_step": 1450,
+   "window_tokens": 1792,
+   "params": 275742772,
+   "passes": [
+    {
+     "amp": "fp16",
+     "val_loss": 3.2698315009167063,
+     "seconds": 258.69,
+     "minus_logged": 0.0
+    }
+   ],
+   "expect": 3.2698315009167063,
+   "val_file": "fineweb_val_000000.bin",
+   "val_file_bytes": 200001024,
+   "val_tokens": 10485760,
+   "val_tokens_sha256": "ce6ad9a79700ee93c1e3edd25ecdcb06e279a958b5a3841c1dd538ef8819e375",
+   "val_seq_len": 65536,
+   "val_sequences": 160,
+   "val_chunk": 65536,
+   "synthetic": false,
+   "val_file_sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640",
+   "val_set_is_upstream": true,
+   "trainer_sha256": "ff5412453d63f49f21ed4aaf18f4a07fe4db6b52037e1045aadeda25eca88312",
+   "rescore_sha256": "5c2de6b8769a15fda8cf3d84ddcf6adb1808b3f5b4695f049f8a2d73e259df51",
+   "world_size": 2,
+   "device": "Tesla T4",
+   "torch": "2.11.0+cu128",
+   "time": "2026-10-29T15:29:39+0000",
+   "model_file": "zds_final_model_step1450.pt",
+   "model_bytes": 1103002903,
+   "model_sha256": "b5eaefafd30477e7c3606374803462eb11e4f0af95bc437f48538717d67f547d"
+  }
+ },
+ "fp32": {
+  "exit": 0,
+  "result": {
+   "ckpt": "ckpt_0001451.pt",
+   "ckpt_bytes": 2978701435,
+   "ckpt_sha256": null,
+   "ckpt_load_s": 0.05,
+   "ckpt_step": 1450,
+   "ckpt_done": true,
+   "ckpt_tokens_seen": 760217600,
+   "ckpt_overflow_skips": 1,
+   "ckpt_args": {
+    "vocab_size": 50257,
+    "model_dim": 768,
+    "num_layers": 12,
+    "num_iters": 1450,
+    "batch_tokens": 524288,
+    "seq_len": 65536,
+    "block": 128,
+    "synthetic": false,
+    "seed": 0,
+    "scale_step_consts": "auto"
+   },
+   "sidecar": {
+    "step": 1450,
+    "next_step": 1451,
+    "tokens_seen": 760217600,
+    "reason": "final",
+    "bytes": 2978701435,
+    "created": "2026-10-29T14:30:25+0000"
+   },
+   "val_step": 1450,
+   "window_tokens": 1792,
+   "params": 275742772,
+   "passes": [
+    {
+     "amp": "fp32",
+     "val_loss": 3.269830916722833,
+     "seconds": 697.16,
+     "minus_logged": -5.841938732764618e-07
+    }
+   ],
+   "expect": 3.2698315009167063,
+   "val_file": "fineweb_val_000000.bin",
+   "val_file_bytes": 200001024,
+   "val_tokens": 10485760,
+   "val_tokens_sha256": "ce6ad9a79700ee93c1e3edd25ecdcb06e279a958b5a3841c1dd538ef8819e375",
+   "val_seq_len": 65536,
+   "val_sequences": 160,
+   "val_chunk": 65536,
+   "synthetic": false,
+   "val_file_sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640",
+   "val_set_is_upstream": true,
+   "trainer_sha256": "ff5412453d63f49f21ed4aaf18f4a07fe4db6b52037e1045aadeda25eca88312",
+   "rescore_sha256": "5c2de6b8769a15fda8cf3d84ddcf6adb1808b3f5b4695f049f8a2d73e259df51",
+   "world_size": 2,
+   "device": "Tesla T4",
+   "torch": "2.11.0+cu128",
+   "time": "2026-10-29T15:41:32+0000"
+  }
+ },
+ "hashes": {
+  "zds-full-s1/run/ckpt/ckpt_0001110.pt": {
+   "bytes": 2978701115,
+   "sha256": "6d6a7a4d7aa6520a1a6880fa3fbc9a2fd6437afaea6e0980f0a3b4664ab69225",
+   "sidecar": {
+    "next_step": 1110,
+    "step": 1109,
+    "tokens_seen": 581959680,
+    "wall_clock_s": 40221.845,
+    "gpu_seconds": 80443.69,
+    "wall_total_s": 42015.44,
+    "gpu_seconds_total": 84030.88,
+    "compute_s": 40221.84,
+    "val_s": 1164.4,
+    "ckpt_s": 537.29,
+    "provider": "kaggle",
+    "segments": [
+     {
+      "provider": "kaggle",
+      "start_step": 0,
+      "world_size": 2,
+      "device": "Tesla T4",
+      "started": "2026-10-28T23:04:58+0000",
+      "end_step": 1109,
+      "ended": "2026-10-29T10:45:02+0000",
+      "session_wall_s": 42015.4
+     }
+    ],
+    "reason": "time_budget",
+    "done": false,
+    "world_size": 2,
+    "data_position": {
+     "shard_idx": 5,
+     "pos": 83886080,
+     "shard_name": "fineweb_train_000006.bin",
+     "shard_bytes": 200001024,
+     "num_shards": 8,
+     "wraps": 0
+    },
+    "created": "2026-10-29T10:45:02+0000",
+    "upstream": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+    "record": "records/track_1_short/2025-01-04_SoftCap (record #18)",
+    "bytes": 2978701115,
+    "file": "ckpt_0001110.pt"
+   }
+  },
+  "zds-full-s2/run/ckpt/ckpt_0001435.pt": {
+   "bytes": 2978701435,
+   "sha256": "13d7eb6bb56f79f774405dbb67553bd87c0b3c50ac429da8a7349b59615edea9",
+   "sidecar": {
+    "next_step": 1435,
+    "step": 1434,
+    "tokens_seen": 752353280,
+    "wall_clock_s": 52210.046,
+    "gpu_seconds": 104420.091,
+    "wall_total_s": 54406.32,
+    "gpu_seconds_total": 108812.63,
+    "compute_s": 52210.05,
+    "val_s": 1403.16,
+    "ckpt_s": 681.32,
+    "provider": "kaggle",
+    "segments": [
+     {
+      "provider": "kaggle",
+      "start_step": 0,
+      "world_size": 2,
+      "device": "Tesla T4",
+      "started": "2026-10-28T23:04:58+0000",
+      "end_step": 1109,
+      "ended": "2026-10-29T10:45:02+0000",
+      "session_wall_s": 42015.4
+     },
+     {
+      "provider": "kaggle",
+      "start_step": 1110,
+      "world_size": 2,
+      "device": "Tesla T4",
+      "started": "2026-10-29T10:50:21+0000",
+      "end_step": 1434,
+      "ended": "2026-10-29T14:16:36+0000",
+      "session_wall_s": 12390.9
+     }
+    ],
+    "reason": "periodic",
+    "done": false,
+    "world_size": 2,
+    "data_position": {
+     "shard_idx": 7,
+     "pos": 55050240,
+     "shard_name": "fineweb_train_000008.bin",
+     "shard_bytes": 200001024,
+     "num_shards": 8,
+     "wraps": 0
+    },
+    "created": "2026-10-29T14:16:36+0000",
+    "upstream": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+    "record": "records/track_1_short/2025-01-04_SoftCap (record #18)",
+    "bytes": 2978701435,
+    "file": "ckpt_0001435.pt"
+   }
+  }
+ },
+ "ckpt_sidecar": {
+  "next_step": 1451,
+  "step": 1450,
+  "tokens_seen": 760217600,
+  "wall_clock_s": 52777.206,
+  "gpu_seconds": 105554.413,
+  "wall_total_s": 55235.14,
+  "gpu_seconds_total": 110470.28,
+  "compute_s": 52777.21,
+  "val_s": 1648.68,
+  "ckpt_s": 697.32,
+  "provider": "kaggle",
+  "segments": [
+   {
+    "provider": "kaggle",
+    "start_step": 0,
+    "world_size": 2,
+    "device": "Tesla T4",
+    "started": "2026-10-28T23:04:58+0000",
+    "end_step": 1109,
+    "ended": "2026-10-29T10:45:02+0000",
+    "session_wall_s": 42015.4
+   },
+   {
+    "provider": "kaggle",
+    "start_step": 1110,
+    "world_size": 2,
+    "device": "Tesla T4",
+    "started": "2026-10-29T10:50:21+0000",
+    "end_step": 1450,
+    "ended": "2026-10-29T14:30:25+0000",
+    "session_wall_s": 13219.7
+   }
+  ],
+  "reason": "final",
+  "done": true,
+  "world_size": 2,
+  "data_position": {
+   "shard_idx": 7,
+   "pos": 62914560,
+   "shard_name": "fineweb_train_000008.bin",
+   "shard_bytes": 200001024,
+   "num_shards": 8,
+   "wraps": 0
+  },
+  "created": "2026-10-29T14:30:25+0000",
+  "upstream": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+  "record": "records/track_1_short/2025-01-04_SoftCap (record #18)",
+  "bytes": 2978701435,
+  "file": "ckpt_0001451.pt"
+ },
+ "n_gpu": 2,
+ "gpu": "Tesla T4",
+ "torch": "2.11.0+cu128",
+ "elapsed_h": 0.324
+}

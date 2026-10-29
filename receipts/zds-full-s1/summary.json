@@ -1,0 +1,90 @@
+{
+ "mode": "full",
+ "kernel": "bharatbheesetti/zds-full-s1",
+ "resumed_from": null,
+ "trainer_exit": 0,
+ "watchdog_sigterm": false,
+ "elapsed_h": 11.692,
+ "n_gpu": 2,
+ "gpu": "Tesla T4",
+ "torch": "2.11.0+cu128",
+ "first_step": 0,
+ "last_step": 1109,
+ "steps_this_session": 1110,
+ "tokens_per_s_median": 14509.9,
+ "step_s_median": 36.129,
+ "overflow_skips_total": 1,
+ "overflow_skips_this_session": 1,
+ "peak_gpu_mem_mib_nvidia_smi": {
+  "0": 14809,
+  "1": 14809
+ },
+ "last_train_loss": 3.358558243294283,
+ "last_val": {
+  "event": "val",
+  "step": 1000,
+  "val_loss": 3.4159638163542483,
+  "tokens": 524288000,
+  "seconds": 253.42,
+  "val_file": "fineweb_val_000000.bin",
+  "val_tokens": 10485760,
+  "val_tokens_sha256": "ce6ad9a79700ee93c1e3edd25ecdcb06e279a958b5a3841c1dd538ef8819e375",
+  "val_seq_len": 65536,
+  "val_chunk": 65536,
+  "val_set_is_upstream": true,
+  "wall_total_s": 37725.77,
+  "gpu_seconds_total": 75451.54,
+  "compute_s": 36003.63,
+  "gpu_seconds": 72007.27,
+  "val_s": 1164.4,
+  "ckpt_s": 473.62,
+  "upstream_val_loss": 3.4056,
+  "val_minus_upstream": 0.0104,
+  "schedule_same_as_upstream": false,
+  "provider": "kaggle",
+  "time": 1793266412.825
+ },
+ "exit_reason": "time_budget",
+ "done": false,
+ "newest_ckpt_next_step": 1110,
+ "gpu_seconds": 80443.69,
+ "gpu_seconds_total": 84030.64,
+ "val_set_is_upstream": true,
+ "val_vs_upstream": [
+  {
+   "step": 0,
+   "val_loss": 10.82583999633789,
+   "upstream_val_loss": 10.8258,
+   "val_minus_upstream": 0.0,
+   "schedule_same_as_upstream": true
+  },
+  {
+   "step": 250,
+   "val_loss": 3.9527174574080277,
+   "upstream_val_loss": 3.9427,
+   "val_minus_upstream": 0.01,
+   "schedule_same_as_upstream": false
+  },
+  {
+   "step": 500,
+   "val_loss": 3.6560953832466168,
+   "upstream_val_loss": 3.6528,
+   "val_minus_upstream": 0.0033,
+   "schedule_same_as_upstream": false
+  },
+  {
+   "step": 750,
+   "val_loss": 3.524461116967096,
+   "upstream_val_loss": 3.5205,
+   "val_minus_upstream": 0.004,
+   "schedule_same_as_upstream": false
+  },
+  {
+   "step": 1000,
+   "val_loss": 3.4159638163542483,
+   "upstream_val_loss": 3.4056,
+   "val_minus_upstream": 0.0104,
+   "schedule_same_as_upstream": false
+  }
+ ]
+}
