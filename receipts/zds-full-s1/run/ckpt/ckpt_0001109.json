@@ -1,0 +1,41 @@
+{
+ "next_step": 1109,
+ "step": 1108,
+ "tokens_seen": 581435392,
+ "wall_clock_s": 40182.52,
+ "gpu_seconds": 80365.04,
+ "wall_total_s": 41960.19,
+ "gpu_seconds_total": 83920.38,
+ "compute_s": 40182.52,
+ "val_s": 1164.4,
+ "ckpt_s": 521.44,
+ "provider": "kaggle",
+ "segments": [
+  {
+   "provider": "kaggle",
+   "start_step": 0,
+   "world_size": 2,
+   "device": "Tesla T4",
+   "started": "2026-10-28T23:04:58+0000",
+   "end_step": 1108,
+   "ended": "2026-10-29T10:44:07+0000",
+   "session_wall_s": 41960.2
+  }
+ ],
+ "reason": "periodic",
+ "done": false,
+ "world_size": 2,
+ "data_position": {
+  "shard_idx": 5,
+  "pos": 83361792,
+  "shard_name": "fineweb_train_000006.bin",
+  "shard_bytes": 200001024,
+  "num_shards": 8,
+  "wraps": 0
+ },
+ "created": "2026-10-29T10:44:07+0000",
+ "upstream": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+ "record": "records/track_1_short/2025-01-04_SoftCap (record #18)",
+ "bytes": 2978701115,
+ "file": "ckpt_0001109.pt"
+}

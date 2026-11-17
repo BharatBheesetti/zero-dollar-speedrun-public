@@ -1,0 +1,51 @@
+{
+ "next_step": 1435,
+ "step": 1434,
+ "tokens_seen": 752353280,
+ "wall_clock_s": 52210.046,
+ "gpu_seconds": 104420.091,
+ "wall_total_s": 54406.32,
+ "gpu_seconds_total": 108812.63,
+ "compute_s": 52210.05,
+ "val_s": 1403.16,
+ "ckpt_s": 681.32,
+ "provider": "kaggle",
+ "segments": [
+  {
+   "provider": "kaggle",
+   "start_step": 0,
+   "world_size": 2,
+   "device": "Tesla T4",
+   "started": "2026-10-28T23:04:58+0000",
+   "end_step": 1109,
+   "ended": "2026-10-29T10:45:02+0000",
+   "session_wall_s": 42015.4
+  },
+  {
+   "provider": "kaggle",
+   "start_step": 1110,
+   "world_size": 2,
+   "device": "Tesla T4",
+   "started": "2026-10-29T10:50:21+0000",
+   "end_step": 1434,
+   "ended": "2026-10-29T14:16:36+0000",
+   "session_wall_s": 12390.9
+  }
+ ],
+ "reason": "periodic",
+ "done": false,
+ "world_size": 2,
+ "data_position": {
+  "shard_idx": 7,
+  "pos": 55050240,
+  "shard_name": "fineweb_train_000008.bin",
+  "shard_bytes": 200001024,
+  "num_shards": 8,
+  "wraps": 0
+ },
+ "created": "2026-10-29T14:16:36+0000",
+ "upstream": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+ "record": "records/track_1_short/2025-01-04_SoftCap (record #18)",
+ "bytes": 2978701435,
+ "file": "ckpt_0001435.pt"
+}
