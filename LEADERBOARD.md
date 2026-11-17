@@ -43,7 +43,8 @@ Ranking: by GPU-hours to ≤ 3.28. Ties go to fewer session-hours.
 Entry #1 notes: an fp16 port of modded-nanogpt record #18 (2025-01-04 SoftCap). It was a single run, with no
 failed full attempts. One fp16 overflow step was skipped, so 1,450 steps made 1,449 updates. The model has 275.7M
 parameters including the embedding tables. The saved final weights re-score to 3.2698 in a separate process (fp16
-and fp32). Including the 2.7 h smoke test, the probes and the 0.3 h re-score, the project used about 18.5 h of
+and fp32). A laptop CPU ran only the watcher script that pulled session 1 and launched session 2. Including the
+2.7 h smoke test, the probes and the 0.3 h re-score, the project used about 18.5 h of
 Kaggle's ~30 h weekly quota.
 
 ## Submitting

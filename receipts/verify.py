@@ -3,6 +3,7 @@
 
     python3 receipts/verify.py        # prints each number with its source; exit 1 if any check fails
 """
+import hashlib
 import json
 import os
 import re
@@ -119,6 +120,12 @@ if os.path.exists(p("rescore.json")):
     r16 = rs["fp16"]["result"]
     check("re-scored checkpoint", (r16["ckpt"], r16["ckpt_step"]), r16["ckpt"] == fin["file"] and
           r16["ckpt_bytes"] == fin["bytes"], "rescore.json fp16.result.ckpt, ckpt_bytes vs final sidecar")
+    for rel, key in (("trainer/train_t4.py", "trainer_sha256"), ("scripts/rescore.py", "rescore_sha256")):
+        path = os.path.join(HERE, "..", *rel.split("/"))
+        if os.path.exists(path):
+            h = hashlib.sha256(open(path, "rb").read()).hexdigest()
+            check(f"{rel} = the file the re-score ran", h[:16] + "...", h == r16[key],
+                  f"sha256 of {rel} in this checkout vs rescore.json fp16.result.{key}")
 else:
     print("--  rescore.json not present yet")
 

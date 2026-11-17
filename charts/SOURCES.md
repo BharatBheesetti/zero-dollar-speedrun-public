@@ -4,17 +4,17 @@
 Prices were checked on 2026-10-29 against the primary posts (fetched, quoted below).
 
 ## Our run (charts 1 and 2, and the $0 / T4-hours row of chart 3)
-- `out/kaggle/zds-full-s1/run/log.jsonl` and `out/kaggle/zds-full-s2/run/log.jsonl` (`event: val`, step records,
-  `event: resume`, `event: exit`). s2's log starts with a byte-identical copy of s1's (reviews/M3.md check 3), so the
+- `receipts/zds-full-s1/run/log.jsonl` and `receipts/zds-full-s2/run/log.jsonl` (`event: val`, step records,
+  `event: resume`, `event: exit`). s2's log starts with a byte-identical copy of s1's (`receipts/verify.py` checks it), so the
   full curve is read from s2 and the session boundary is the `resume` record.
-- `out/kaggle/zds-full-s{1,2}/summary.json` `elapsed_h`: Kaggle session hours (11.692 + 3.696 = 15.388 h; × 2 GPUs
+- `receipts/zds-full-s{1,2}/summary.json` `elapsed_h`: Kaggle session hours (11.692 + 3.696 = 15.388 h; × 2 GPUs
   = 30.78 T4-hours). Chart 2's x-axis is the trainer's own whole-process clock (`gpu_seconds_total`, 2 GPUs × wall
   time since process start, carried across the resume); it ends at 30.7 T4-hours, a little under the session total
   because it doesn't count the notebook's data download.
-- Cost $0: both kernels ran on Kaggle's free tier (`build/kernel*/kernel-metadata.json`: `machine_shape
+- Cost $0: both kernels ran on Kaggle's free tier (`receipts/zds-full-s{1,2}/kernel-metadata.json`: `machine_shape
   NvidiaTeslaT4`, `is_private true`; data from Hugging Face). No card on file, no bill.
 - Not from these logs but used in the post: the first Kaggle attempt (smoke v1) died 1.7 min in because Kaggle
-  auto-extracts uploaded `.tar.gz` datasets (fixed in commit `3b6f049`).
+  auto-extracts uploaded `.tar.gz` datasets (fixed before the smoke run in `receipts/zds-smoke-s1`).
 
 ## Upstream record #18 (chart 1, and the derived row of chart 3)
 - `charts/data/upstream_record18_31d6c427.txt`: verbatim copy of
@@ -30,7 +30,7 @@ Prices were checked on 2026-10-29 against the primary posts (fetched, quoted bel
 |---|---|---|---|---|---|---|
 | llmc | llm.c GPT-2 (124M) | 2024 | 20 | 14 | 8×A100 rented, ~90 min; 10B tokens; its val loss set the speedrun's target | https://github.com/karpathy/llm.c/discussions/481 |
 | nanochat | nanochat speedrun | 2025 | 100 | 24 | 8×H100 rented, 3h51m; a ~560M chat model, a different job ($92.4 actual) | https://github.com/karpathy/nanochat/discussions/1 |
-| this | This run, Kaggle free 2×T4 | 2026 | 0 |  | free T4-hours, no card on file | out/kaggle/zds-full-s{1,2} |
+| this | This run, Kaggle free 2×T4 | 2026 | 0 |  | free T4-hours, no card on file | receipts/zds-full-s{1,2} |
 
 All three prices verified against the primary posts on 2026-10-29 (quotes below).
 

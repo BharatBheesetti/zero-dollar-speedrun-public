@@ -37,6 +37,10 @@ re-derives them all from this folder (stdlib only) and exits 1 if any doesn't ho
 | checkpoint hashes | final `5bc6bac3…c4ae`, s1→s2 link `ckpt_0001110.pt` `6d6a7a4d…9225` | `rescore.json` | `fp16.result.ckpt_sha256`; `hashes["zds-full-s1/run/ckpt/ckpt_0001110.pt"]`. Model-only fp32 weights `zds_final_model_step1450.pt`, sha256 in `fp16.result.model_sha256`, stay in the private Kaggle output |
 | code version per session | smoke `3b6f049`, s1 and s2 `b3343e0`, re-score `38fff7a` | `*/kernel.log` | `code git sha:` line (from the code dataset's `manifest.json`; no `-dirty`) |
 
+The git SHAs in this table are from the development history, which is not part of this repo (it starts from a fresh
+history). What you can check here: `sha256sum trainer/train_t4.py` gives `ff541245…8312`, the hash the re-score
+logged for the code it ran, and the same file sessions 1 and 2 trained with. `verify.py` checks both files.
+
 ## Files
 
 | Path | What |

@@ -2,12 +2,12 @@
 """Regenerate every chart in charts/ from the run logs. No numbers are typed in here.
 
 Inputs (see charts/SOURCES.md):
-  out/kaggle/zds-full-s1/{summary.json,run/log.jsonl}
-  out/kaggle/zds-full-s2/{summary.json,run/log.jsonl}   (s2's log starts with a copy of s1's)
+  receipts/zds-full-s1/{summary.json,run/log.jsonl}
+  receipts/zds-full-s2/{summary.json,run/log.jsonl}     (s2's log starts with a copy of s1's)
   charts/data/upstream_record18_31d6c427.txt             (verbatim modded-nanogpt record #18 log)
   charts/SOURCES.md                                      (cost-ladder table)
 
-Usage:  .venv/bin/python charts/make_charts.py [--runs out/kaggle] [--out charts]
+Usage:  .venv/bin/python charts/make_charts.py [--runs receipts] [--out charts]     (needs matplotlib)
 Writes: val_vs_step, val_vs_t4_hours, cost_ladder (.svg and .png each).
 """
 import argparse
@@ -255,7 +255,7 @@ def chart_cost_ladder(run, up, rows, out):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--runs", default=os.path.join(ROOT, "out", "kaggle"))
+    ap.add_argument("--runs", default=os.path.join(ROOT, "receipts"))
     ap.add_argument("--upstream", default=os.path.join(HERE, "data", "upstream_record18_31d6c427.txt"))
     ap.add_argument("--sources", default=os.path.join(HERE, "SOURCES.md"))
     ap.add_argument("--out", default=HERE)
