@@ -146,8 +146,8 @@ which runs on a T4. [trainer/PORTING.md](trainer/PORTING.md) goes through it fea
 | `LEADERBOARD.md` | the "your bill is zero" leaderboard rules |
 | `tests/` | `make test`, CPU only |
 
-Some comments cite "review M1/M3 finding N" or `research/…`. Those are development notes that are not in this
-repo. The git SHAs in `receipts/*/kernel.log` are from the development history; this repo starts from a fresh one.
+`scripts/rescore.py` is kept byte-identical to the file that ran, so its docstring still cites a development
+review note. The git SHAs in `receipts/*/kernel.log` are from the development history; this repo starts from a fresh one.
 
 ## Credits
 

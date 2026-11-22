@@ -42,7 +42,7 @@ T0 = time.time()
 CFG = json.loads(__CFG_JSON__)
 print(json.dumps(CFG, indent=1))
 WORK = "/kaggle/working"
-INPUT = CFG.get("input_root", "/kaggle/input")      # datasets + attached kernel outputs, read-only
+INPUT = CFG.get("input_root", "/kaggle/input")
 RUN = os.path.join(WORK, "run")
 CKPT = os.path.join(RUN, "ckpt")
 SCRATCH = CFG.get("scratch", "/kaggle/tmp")
@@ -59,8 +59,7 @@ assert torch.cuda.is_available(), "GPU not attached: enable_gpu/machine_shape in
 os.chdir(WORK)""")
 
 md("## 1. Unpack the trainer from the attached dataset")
-UNPACK_SRC = """# Kaggle auto-extracts uploaded archives: the dataset shows up either as zds_code.tar.gz or as a zds_code/ dir.
-tarballs = sorted(glob.glob(os.path.join(INPUT, "**", "zds_code.tar.gz"), recursive=True))
+UNPACK_SRC = """tarballs = sorted(glob.glob(os.path.join(INPUT, "**", "zds_code.tar.gz"), recursive=True))
 extracted = sorted(glob.glob(os.path.join(INPUT, "**", "zds_code", "trainer", "train_t4.py"), recursive=True))
 assert tarballs or extracted, ("zds code not found under /kaggle/input (neither zds_code.tar.gz nor zds_code/): "
                                "is the dataset attached (dataset_sources)? " + repr(glob.glob(os.path.join(INPUT, "**"), recursive=True)[:40]))
@@ -70,7 +69,7 @@ if tarballs:
     with tarfile.open(tarballs[0]) as tf:
         try:
             tf.extractall(SRC, filter="data")
-        except TypeError:                  # python < 3.11.4 has no filter=
+        except TypeError:
             tf.extractall(SRC)
     code_root = os.path.dirname(tarballs[0])
 else:
@@ -114,20 +113,20 @@ if CFG.get("resume_from"):
     else:
         t = time.time()
         shutil.copy(pt, os.path.join(CKPT, os.path.basename(pt)))
-        shutil.copy(js, os.path.join(CKPT, os.path.basename(js)))      # sidecar last: commits the pair
+        shutil.copy(js, os.path.join(CKPT, os.path.basename(js)))
         print(f"copied {pt} (next_step {step}, {meta['bytes'] / 2**30:.2f} GiB) in {time.time() - t:.0f} s")
     prev_log = os.path.join(os.path.dirname(os.path.dirname(js)), "log.jsonl")
     if os.path.exists(prev_log) and not os.path.exists(os.path.join(RUN, "log.jsonl")):
-        shutil.copy(prev_log, os.path.join(RUN, "log.jsonl"))         # one continuous log across sessions
+        shutil.copy(prev_log, os.path.join(RUN, "log.jsonl"))
         print("continuing log", prev_log)
     RESUMED_FROM = {"source": CFG["resume_from"], "path": pt, "next_step": step, "segments": meta.get("segments")}
 else:
     print("fresh run (no resume_from)")""")
 
 md("## 4. Train: torchrun on every GPU, self-stop before the session cap")
-code("""CAP_S = CFG["session_cap_h"] * 3600                      # min(12 h, push timeout)
-DEADLINE = T0 + CAP_S - CFG["margin_min"] * 60           # trainer checkpoints and exits by here
-SIGTERM_AT = T0 + CAP_S - CFG["sigterm_min"] * 60        # watchdog, if a step or the final val overruns
+code("""CAP_S = CFG["session_cap_h"] * 3600
+DEADLINE = T0 + CAP_S - CFG["margin_min"] * 60
+SIGTERM_AT = T0 + CAP_S - CFG["sigterm_min"] * 60
 KILL_AT = T0 + CAP_S - CFG["kill_min"] * 60
 budget_min = (DEADLINE - time.time()) / 60
 assert budget_min > 5, f"only {budget_min:.1f} min left for training"
@@ -162,7 +161,6 @@ while proc.poll() is None:
         last_line = lines[-1]
         print(f"[{(time.time() - T0) / 3600:5.2f} h] {last_line}", flush=True)
     if time.time() > SIGTERM_AT and not termed:
-        # signal the workers, not torchrun: torchrun would SIGKILL them 30 s later, possibly mid-checkpoint
         try:
             kids = [int(x) for x in open(f"/proc/{proc.pid}/task/{proc.pid}/children").read().split()]
         except OSError:
@@ -210,7 +208,7 @@ summary = {
     "last_val": vals[-1] if vals else None, "exit_reason": exits[-1]["reason"] if exits else None,
     "done": any(r.get("event") == "checkpoint" and r.get("reason") == "final" for r in recs),
     "newest_ckpt_next_step": ck[0][0] if ck else None, "gpu_seconds": steps[-1]["gpu_seconds"] if steps else None,
-    "gpu_seconds_total": steps[-1].get("gpu_seconds_total") if steps else None,   # incl. val + checkpoints
+    "gpu_seconds_total": steps[-1].get("gpu_seconds_total") if steps else None,
     "val_set_is_upstream": next((r.get("val_set_is_upstream") for r in recs if r.get("event") == "start"), None),
     "val_vs_upstream": [{k: r.get(k) for k in ("step", "val_loss", "upstream_val_loss", "val_minus_upstream",
                                                "schedule_same_as_upstream")} for r in vals if "upstream_val_loss" in r],
@@ -222,9 +220,6 @@ assert RC == 0 or termed, f"trainer failed with exit code {RC}"
 """)
 
 
-# ---------------------------------------------------------------------------------------------
-# Re-score notebook (review M3 finding 4): score the saved final weights again, outside the training run.
-# ---------------------------------------------------------------------------------------------
 RESCORE_CELLS: list[tuple[str, str]] = [("markdown", """# Zero-Dollar Speedrun: re-score the saved final weights
 
 Pushed by `lanes/kaggle_push.py rescore`. Loads the final checkpoint from the attached training session's output
@@ -250,7 +245,7 @@ assert torch.cuda.is_available(), "GPU not attached"
 os.chdir(WORK)"""))
 RESCORE_CELLS.append(("code", UNPACK_SRC))
 RESCORE_CELLS.append(("code", """t = time.time()
-subprocess.run([sys.executable, "-u", "scripts/get_data.py", "0", "--dir", DATA], cwd=SRC, check=True)   # val shard only
+subprocess.run([sys.executable, "-u", "scripts/get_data.py", "0", "--dir", DATA], cwd=SRC, check=True)
 print(f"val shard ready in {time.time() - t:.0f} s:", sorted(os.listdir(DATA)))"""))
 RESCORE_CELLS.append(("code", """def find(rel):
     \"\"\"An attached kernel output file by its tail path, e.g. zds-full-s2/run/ckpt/ckpt_0001451.pt.\"\"\"

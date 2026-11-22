@@ -326,7 +326,7 @@ RESCORE = dict(slug="zds-rescore-s2", sources=("zds-full-s2", "zds-full-s1"), ti
 
 
 def render_rescore(a, user: str) -> Path:
-    """Eval-only kernel: attach the training sessions' outputs, re-score the final checkpoint (review M3 #4)."""
+    """Eval-only kernel: attach the training sessions' outputs, re-score the final checkpoint."""
     d = Path(a.build_dir) / "kernel-rescore"
     shutil.rmtree(d, ignore_errors=True)
     d.mkdir(parents=True)

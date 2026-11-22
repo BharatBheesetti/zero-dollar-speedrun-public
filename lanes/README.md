@@ -39,7 +39,7 @@ export ZDS_KAGGLE_LEDGER_OK=1                                            # only 
 .venv/bin/python lanes/kaggle_push.py chain --session 2 --skip-dataset  # -> zds-full-s2
 .venv/bin/python lanes/kaggle_push.py pull --mode full --session 2      # repeat with --session 3... until done
 
-# 4. re-score (review M3 finding 4): eval-only kernel zds-rescore-s2 attaches s2's (and s1's) output, scores the
+# 4. re-score: eval-only kernel zds-rescore-s2 attaches s2's (and s1's) output, scores the
 #    final checkpoint with scripts/rescore.py in fp16 and fp32, hashes the joining checkpoints. ~0.5 h, 2 h cap.
 .venv/bin/python lanes/kaggle_push.py rescore                           # uploads the code (rescore.py), pushes
 .venv/bin/python lanes/kaggle_push.py pull --kernel zds-rescore-s2      # -> out/kaggle/zds-rescore-s2/rescore.json

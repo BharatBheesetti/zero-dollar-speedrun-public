@@ -1,4 +1,4 @@
-"""The 2-rank (gloo) DDP path and the fp16 + GradScaler path, on the tiny CPU config (review M1 finding 9)."""
+"""The 2-rank (gloo) DDP path and the fp16 + GradScaler path, on the tiny CPU config."""
 import math
 import os
 import subprocess
